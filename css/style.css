@@ -1,0 +1,447 @@
+/****************************
+------General Styling--------
+****************************/
+*, *::before, *::after{
+    margin: 0;
+}
+
+html, 
+body {
+    padding: 0;
+    font-family: source-sans-pro, sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1085px;
+}
+
+.main-blog-post-title-txt{
+    font-size: 2rem;
+    width: 72%;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus{
+    opacity: 60%;
+}
+
+h1,
+.company-name-txt{
+    letter-spacing: -0.03em;
+    line-height: 1.08;
+}
+
+img{
+    display: block;
+}
+
+
+/**********************************
+**********Header Styling***********
+**********************************/
+header{
+    background-color: white;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 0.19em;
+}
+
+.logo-img{
+    width: 1.45em;
+}
+
+.logo-txt{
+    margin: 0;
+    font-family: roboto, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+.nav-ul{
+    display: flex;
+    gap: 1.875em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-ul li{
+    display: inline-block;
+}
+
+.nav-ul a{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: #090909;
+}
+
+/************************************************
+-------------About Me Section Styling------------
+************************************************/
+.about-me-main{
+    margin-top: 1.63em;
+}
+
+.about-me-title{
+    width: 94%;
+    font-size: 2.18rem;
+    margin-bottom: 0.46em;
+}
+
+.profile-img{
+    width: 11.375em;
+    border-radius: 50%;
+}
+
+.about-me-grid{
+    display: grid;
+    gap: 1.625em;
+    grid-template-areas: 
+    "imag"
+    "intr"
+    "main";
+}
+.about-me-img-section{
+    grid-area: imag;
+}
+
+.about-me-intro-section{
+    margin-bottom: 1.5em;
+    grid-area: intr;
+}
+
+.about-me-main-section{
+    grid-area: main;
+}
+
+/************************************************
+------------Hero Section Styling-----------------
+************************************************/
+.hero-section{
+    margin-bottom: 2.125em;
+}
+
+.hero-blog-post{
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url("../images/hero.png");
+    background-size: cover;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    padding: 21vw 0 6vw 0;
+}
+
+.hero-blog-post{
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+
+.hero-blog-post-title-txt{
+    margin: 0.25em 0 0.34em 0;
+}
+
+/*****************************************
+------Full Blog Post Post Styling---------
+*****************************************/
+.blog-post-page-main{
+    margin-top: 2em;
+}
+
+.full-blog-post-grid{
+    display: grid;
+    grid-template-areas:
+    "intr"
+    "imag"
+    "main";
+    gap: 2.19em 4.25em;
+}
+
+.full-blog-post-intro-section{
+    grid-area: intr;
+}
+
+.full-blog-post-image-section{
+    grid-area: imag;
+}
+
+.full-blog-post-main-section{
+    grid-area: main;
+}
+
+.main-blog-post-date-txt{
+    font-size: 0.75rem;
+}
+
+.full-blog-post .main-blog-post-date-txt{
+    margin-bottom: 1.33em;
+}
+
+.blog-post-date-txt{
+    font-size: 0.89rem;
+}
+
+.full-blog-post{
+    color: #151515;
+    margin-bottom: 3.19em;
+}
+
+.full-blog-post-title-txt{
+    margin-bottom: 0.47em;
+}
+
+.full-blog-post-intro-section p{
+    margin-bottom: 0;
+}
+
+.blend-color{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-blog-post-img{
+    mix-blend-mode: multiply;
+    object-position: left 0 bottom -24vw;
+}
+
+.full-blog-post-img{
+    width: 100%;
+    border-radius: 3px;
+    height: 45vw;
+    max-height: 488px;
+    object-fit: cover;
+}
+
+.full-blog-post-main-section h2,
+.full-blog-post-main-section p:not(:last-child){
+    font-size: 1rem;
+    margin-bottom: 1.2em;
+}
+
+.full-blog-post-main-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+/************************************
+-----Blog Post Preview Styling-------
+************************************/
+.blog-posts-grid{
+    display: grid;
+    gap: 2.56em;
+}
+
+.recent-posts-title{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1.69rem;
+}
+
+.blog-preview{
+    display: flex;
+    flex-direction: column;
+    gap: 0.56em;
+}
+
+.blog-preview-img{
+    width: 100%;
+    height: 232px;
+    object-fit: cover;
+    border-radius: 3px;
+    margin-bottom: 0.31em;
+}
+
+.view-more-btn{
+    margin: 1.69em auto 0 auto;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: underline;
+    padding: 0;
+    background-color: white;
+    border: none;
+}
+
+.hide-blog-post{
+    display: none;
+}
+
+.blog-post-title-txt{
+    line-height: 1.08;
+    font-size: 1.5rem;
+    color: #141414
+}
+
+.blog-preview-main-txt{
+    line-height: 1.25;
+    color: #505050;
+}
+
+/************************************
+---------Footer Styling--------------
+************************************/
+footer{
+    background-color: #202020;
+    padding: 2.31em 0;
+    text-align: center;
+    margin-top: 3.5em;
+}
+
+.homepage-footer{
+    margin-top: 2.69em;
+}
+
+.company-name-txt{
+    color: #ECECEC;
+    font-size: 0.75rem;
+}
+
+.copyright-txt{
+    color: #D7D7D7;
+    font-size: 0.75rem;
+    margin: 3px 0 0 0;
+}
+
+
+/*****************************************
+It was found that the background image for
+the hero section looked the best at all
+screen sizes if the background position
+was adjusted at 500px, so that is what
+this media query is for.
+*****************************************/
+@media (min-width: 500px){
+    .hero-blog-post{
+        background-position: left 0 bottom -27vw;
+    }
+}
+
+
+/***********************************
+-------Desktop Media Query----------
+***********************************/
+@media (min-width: 1085px){
+    body{
+        background-color: #FAFAFA;
+    }
+
+    .blog-post-title-txt{
+        margin-top: 0.21em;
+    }
+
+    .about-me-title,
+    .full-blog-post-title-txt{
+        font-size: 2.25rem;
+    }
+
+    .about-me-title{
+        margin-bottom: 0.28em;
+    }
+
+    .blog-post-page-main{
+        margin-top: 4.44em;
+    }
+
+    .full-blog-post .main-blog-post-date-txt{
+        margin-bottom: 1.5em;
+    }
+
+    .full-blog-post-title-txt{
+        margin-bottom: 0.75em;
+    }
+
+    .main-blog-post-date-txt{
+        font-size: 1rem;
+    }
+
+    .hero-blog-post-title-txt{
+        font-size: 2.5rem;
+    }
+
+    .logo-txt{
+        font-size: 1.25rem;
+    }
+
+    .nav-ul a{
+        font-size: 1rem;
+    }
+
+    .logo-img{
+        width: 2.14em;
+    }
+
+    .full-blog-post-grid{
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas:
+        ".... intr ...."
+        "imag imag imag"
+        ".... main ....";
+    }
+
+    .recent-posts-title{
+        font-size: 1.5rem;
+    }
+
+    .about-me-main{
+        margin-top: 5.69em;
+    }
+
+    .about-me-grid{
+        grid-template-columns: calc(4.25rem - 2.06rem) auto 1fr calc(4.19rem - 2.06rem);
+        grid-template-areas:
+        "imag imag intr intr"
+        ".... main main ....";
+        gap: 4.19rem 2.06rem;
+        align-items: center;
+    }
+
+    .about-me-intro-section{
+        margin: 0;
+    }
+
+    .hero-date-txt{
+        font-size: 1rem;
+    }
+
+    .hero-section{
+        margin-bottom: 3.31em;
+    }
+
+    .hero-blog-post{
+        padding: 26.5vw 0 5.5vw 0;
+    }
+
+    .blog-posts-grid{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.875em 1.625em;
+    }
+
+    .view-more-btn{
+        font-size: 0.89rem;
+        margin-top: 2.18em;
+    }
+
+    .homepage-footer,
+    footer{
+        margin-top: 3.19em;
+    }
+}
